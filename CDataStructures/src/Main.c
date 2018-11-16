@@ -2,31 +2,26 @@
 #include <stdlib.h>
 #include "CDS/LinkedList.h"
 #include "CDS/DynamicArray.h"
+#include "CDS/Stack.h"
 
 int main()
 {
-	List *list = ListCreate(sizeof(int));
+	Stack *stack = StackCreate(sizeof(int));
 
-	int a = 1;
-	ListPushBack(list, &a);
-	int b = 2;
-	ListPushBack(list, &b);
-	int c = 3;
-	ListPushBack(list, &c);
-	int d = 4;
-	ListPushBack(list, &d);
-	int e = 5;
-	ListPushBack(list, &e);
+	//Push 50 elements, counting
+	for (int i = 0; i < 50; i++)
+		StackPush(stack, &i);
 
-	int f = 6;
-	ListInsert(list, 2, &f);
+	//Pop 15 elements
+	for (int i = 0; i < 15; i++)
+		StackPop(stack);
 
-	ListRemove(list, list->size - 1);
+	//Output all elements
+	for (int i = 0; i < stack->size; i++)
+		printf("%d: %d\n", i, *(int*)StackGet(stack, i));
 
-	for (int i = 0; i < list->size; i++)
-		printf("%d: %d\n", i, *(int*)ListGet(list, i));
-
-	ListFree(&list);
+	//Free stack
+	StackFree(&stack);
 
 	//Keep window up
 	puts("Press enter to exit.");
