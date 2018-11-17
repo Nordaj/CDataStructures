@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include "DynamicArray.h"
-#include "Stack.h"
 
 typedef struct TreeNode
 {
@@ -72,9 +71,9 @@ inline void *TreeFree(Tree **tree)
 inline void *TreePrintInt(TreeNode *root)
 {
 	//Iterate forwards
-	//Assume integer
 	printf("===\n%d\n", *(int*)root->data);
 	for (int i = 0; i < root->children->size; i++)
-		TreePrint(*(TreeNode**)ListGet(root->children, i));
+		TreePrintInt(*(TreeNode**)ListGet(root->children, i));
 }
+
 #endif //TREE_H

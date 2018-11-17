@@ -118,7 +118,7 @@
     <ClCompile Include="src\Main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\CDS\CommonDefs.h" />
+    <ClInclude Include="src\CDS\CDS.h" />
     <ClInclude Include="src\CDS\DynamicArray.h" />
     <ClInclude Include="src\CDS\LinkedList.h" />
     <ClInclude Include="src\CDS\Stack.h" />

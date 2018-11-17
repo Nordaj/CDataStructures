@@ -1,6 +1,6 @@
 ﻿  Main.c
 d:\documents\github\cdatastructures\cdatastructures\src\cds\dynamicarray.h(57): warning C4013: 'memcpy' undefined; assuming extern returning int
-d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(74): warning C4716: 'TreePrint': must return a value
-d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(65): warning C4716: 'TreeFree': must return a value
-d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(59): warning C4716: 'TreeRemove': must return a value
+d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(68): warning C4716: 'TreeFree': must return a value
+d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(61): warning C4716: 'TreeRemove': must return a value
+d:\documents\github\cdatastructures\cdatastructures\src\cds\tree.h(77): warning C4716: 'TreePrintInt': must return a value
   CDataStructures.vcxproj -> D:\Documents\GitHub\CDataStructures\Debug\CDataStructures.exe

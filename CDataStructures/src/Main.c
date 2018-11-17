@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "CDS/LinkedList.h"
-#include "CDS/DynamicArray.h"
-#include "CDS/Stack.h"
-#include "CDS/Tree.h"
+#include "CDS/CDS.h"
 
 int main()
 {
@@ -22,7 +19,7 @@ int main()
 
 	TreeInsert(tree, tree->root, &e);
 
-	TreePrint(tree->root);
+	TreePrintInt(tree->root);
 
 	TreeFree(&tree);
 

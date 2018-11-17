@@ -26,13 +26,13 @@
     <ClInclude Include="src\CDS\DynamicArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\CDS\CommonDefs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\CDS\Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\CDS\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CDS\CDS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
