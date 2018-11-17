@@ -32,5 +32,8 @@
     <ClInclude Include="src\CDS\Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\CDS\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

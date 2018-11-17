@@ -3,25 +3,28 @@
 #include "CDS/LinkedList.h"
 #include "CDS/DynamicArray.h"
 #include "CDS/Stack.h"
+#include "CDS/Tree.h"
 
 int main()
 {
-	Stack *stack = StackCreate(sizeof(int));
+	int a = 1;
+	int b = 2;
+	int c = 3;
+	int d = 4;
+	int e = 5;
 
-	//Push 50 elements, counting
-	for (int i = 0; i < 50; i++)
-		StackPush(stack, &i);
+	Tree *tree = TreeCreate(&a, sizeof(int));
 
-	//Pop 15 elements
-	for (int i = 0; i < 15; i++)
-		StackPop(stack);
+	TreeNode *firstChild = TreeInsert(tree, tree->root, &b);
 
-	//Output all elements
-	for (int i = 0; i < stack->size; i++)
-		printf("%d: %d\n", i, *(int*)StackGet(stack, i));
+	TreeInsert(tree, firstChild, &c);
+	TreeInsert(tree, firstChild, &d);
 
-	//Free stack
-	StackFree(&stack);
+	TreeInsert(tree, tree->root, &e);
+
+	TreePrint(tree->root);
+
+	TreeFree(&tree);
 
 	//Keep window up
 	puts("Press enter to exit.");
